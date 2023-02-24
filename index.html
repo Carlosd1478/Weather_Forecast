@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!-- nav bar -->
+  <nav>
+    <h1>DojoWeather</h1>
+    <ul>
+      <li>
+        <a onclick="alertMe()" href="#">Burbank</a>
+      </li>
+      <li>
+        <a onclick="alertMe()" href="#">Chicago</a>
+      </li>
+      <li>
+        <a onclick="alertMe()" href="#">Dallas</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="sub-header">
+    <h2>San Jose</h2>
+    <div>
+      <lable for="temp-selector">show temperature in</lable>
+      <select name="" onchange="tempChange()" id="temp-selector">
+        <option value="celcius">C</option>
+        <option value="farenheit">F</option>
+      </select>
+    </div>
+  </div>
+  <hr>
+  <!-- weather card section  -->
+  <div class="weather-card-section">
+    <div class="weather-card">
+      <h3>Today</h3>
+      <img src="./assets/some_rain.png" alt="rain">
+      <p>some rain</p>
+      <div class="weather-numbers">
+        <p id="temp1" class="high-temp">24</p>
+        <p id="temp2" class="low-temp">18</p>
+      </div>
+    </div>
+    <div class="weather-card">
+      <h3>Tomorrow</h3>
+      <img src="./assets/some_sun.png" alt="sun">
+      <p>some sun</p>
+      <div class="weather-numbers">
+        <p id="temp3" class="high-temp">27</p>
+        <p id="temp4" class="low-temp">19</p>
+      </div>
+    </div>
+    <div class="weather-card">
+      <h3>Friday</h3>
+      <img src="./assets/some_clouds.png" alt="clouds">
+      <p>some clouds</p>
+      <div class="weather-numbers">
+        <p id="temp5" class="high-temp">21</p>
+        <p id="temp6" class="low-temp">16</p>
+      </div>
+    </div>
+    <div class="weather-card">
+      <h3>Saturday</h3>
+      <img src="./assets/some_sun.png" alt="sun">
+      <p>some sun</p>
+      <div class="weather-numbers">
+        <p id="temp7" class="high-temp">26</p>
+        <p id="temp8" class="low-temp">21</p>
+      </div>
+    </div>
+  </div>
+  <!-- cookie section  -->
+  <div class="cookie-section">
+    <h4>Stop! Cookie time</h4>
+    <div class="cookie-body">
+      <img src="./assets/cookie.png" alt="cookie">
+      <p>We use cookies (sadly not the edible ones) to personlize content and ads,<br> to provide social media features
+        and to analyse our traffic. <a href="#">Read more..</a></p>
+      <button onclick="deleteMe()">I accept</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>
